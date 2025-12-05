@@ -39,7 +39,7 @@ export const modifyStudentData = asyncHandler(async (req, res) => {
     res.status(400);
     throw new Error("No se envio id");
   }
-  if (Object.keys(filtro).length === 0) {
+  if (Object.keys(data).length === 0) {
     res.status(400);
     throw new Error("No se envio ningun dato");
   }
